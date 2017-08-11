@@ -1,0 +1,31 @@
+<idea-plugin>
+  <id>be.maartenballiauw.rider.globaljson</id>
+  <name>.NET Core global.json support</name>
+  <version>0.0.1.0</version>
+  <vendor url="https://blog.maartenballiauw.be">Maarten Balliauw</vendor>
+
+  <idea-version since-build="171.3655" until-build="171.3655.*" />
+
+  <depends>com.intellij.modules.rider</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+  </extensions>
+
+  <actions>
+    <action class="be.maartenballiauw.rider.globaljson.actions.ManageDotNetCoreSdkAction" id="GlobalJson.ManageNetCoreSdkForProjectAction">
+      <add-to-group group-id="SolutionExplorerPopupMenu" anchor="after" relative-to-action="AddRiderProject" />
+    </action>
+  </actions>
+
+  <description><![CDATA[
+<p>TODO</p>
+]]>
+  </description>
+  <change-notes>
+<![CDATA[
+<ul>
+  <li>TODO</li>
+</ul>
+]]>
+  </change-notes>
+</idea-plugin>
