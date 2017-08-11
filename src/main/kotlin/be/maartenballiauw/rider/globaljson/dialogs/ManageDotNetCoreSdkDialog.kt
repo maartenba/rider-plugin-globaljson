@@ -45,7 +45,7 @@ class ManageDotNetCoreSdkDialog(
             }
         }
         selectedValue = valueEditor.selectedItem.toString()
-        valueEditor.addActionListener { e: ActionEvent? -> selectedValue = valueEditor.selectedItem.toString() }
+        valueEditor.addActionListener { selectedValue = valueEditor.selectedItem.toString() }
 
         panel.add(valueEditor)
 
