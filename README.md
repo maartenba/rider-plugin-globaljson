@@ -12,6 +12,7 @@ Rider plugin that allows setting the .NET Core SDK version for a solution.
 
 ## Links
 
+* [Plugin page](https://plugins.jetbrains.com/plugin/9924--net-core-global-json-support)
 * [GitHub](https://github.com/maartenba/rider-plugin-globaljson)
 * [Issues](https://github.com/maartenba/rider-plugin-globaljson/issues)
 
