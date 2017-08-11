@@ -24,4 +24,4 @@ Rider plugin that allows setting the .NET Core SDK version for a solution.
 
 ### Manage .NET Core SDK - dialog
 
-![Manage .NET Core SDK - Dialog](https://raw.githubusercontent.com/maartenba/rider-plugin-globaljson/master/docs/manage-sdk-menu.png)
+![Manage .NET Core SDK - Dialog](https://raw.githubusercontent.com/maartenba/rider-plugin-globaljson/master/docs/manage-sdk-dialog.png)
