@@ -25,9 +25,10 @@ class ManageDotNetCoreSdkDialog(
     }
 
     override fun createCenterPanel(): JComponent? {
-        val panel = JPanel()
-        panel.layout = BorderLayout()
-        panel.border = IdeBorderFactory.createEmptyBorder(3)
+        val panel = JPanel().apply {
+            layout = BorderLayout()
+            border = IdeBorderFactory.createEmptyBorder(3)
+        }
 
         val label = JLabel("Select .NET Core SDK:")
         label.border = IdeBorderFactory.createEmptyBorder(0, 0, 2, 2)
@@ -51,9 +52,7 @@ class ManageDotNetCoreSdkDialog(
         return panel
     }
 
-    override fun createActions(): Array<Action> {
-        return arrayOf(okAction, cancelAction)
-    }
+    override fun createActions(): Array<Action> = arrayOf(okAction, cancelAction)
 
     override fun doOKAction() {
         super.doOKAction()
