@@ -1,6 +1,8 @@
 # .NET Core global.json support
 
-Rider plugin that allows setting the .NET Core SDK version for a solution
+Rider plugin that allows setting the .NET Core SDK version for a solution.
+
+[&raquo; See end-to-end demo](https://raw.githubusercontent.com/maartenba/rider-plugin-globaljson/master/docs/plugin-demo.gif)
 
 ## Features
 
@@ -12,3 +14,13 @@ Rider plugin that allows setting the .NET Core SDK version for a solution
 
 * [GitHub](https://github.com/maartenba/rider-plugin-globaljson)
 * [Issues](https://github.com/maartenba/rider-plugin-globaljson/issues)
+
+## Screenshots
+
+### Manage .NET Core SDK solution-level context menu
+
+![Manage .NET Core SDK - Menu](https://raw.githubusercontent.com/maartenba/rider-plugin-globaljson/master/docs/manage-sdk-menu.png)
+
+### Manage .NET Core SDK - dialog
+
+![Manage .NET Core SDK - Dialog](https://raw.githubusercontent.com/maartenba/rider-plugin-globaljson/master/docs/manage-sdk-menu.png)

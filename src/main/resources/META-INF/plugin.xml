@@ -18,14 +18,18 @@
   </actions>
 
   <description><![CDATA[
-<p>TODO</p>
-]]>
-  </description>
-  <change-notes>
-<![CDATA[
+<p>Rider plugin that allows setting the .NET Core SDK version for a solution</p>
+<p><strong>Features</strong></p>
 <ul>
-  <li>TODO</li>
+<li>Adds a solution-level context menu for managing the .NET Core SDK to use</li>
+<li>Provides a dialog for selecting from installed .NET Core SDK versions</li>
+<li>Updates the <code>global.json</code> file with the correct .NET Core SDK version</li>
+</ul>
+<p><strong>Links</strong></p>
+<ul>
+<li><a href="https://github.com/maartenba/rider-plugin-globaljson">GitHub</a></li>
+<li><a href="https://github.com/maartenba/rider-plugin-globaljson/issues">Issues</a></li>
 </ul>
 ]]>
-  </change-notes>
+  </description>
 </idea-plugin>
