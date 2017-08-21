@@ -33,7 +33,7 @@ class DotNetCoreSdkDetector {
 
             if (dotnetSdkRootFolder != null && dotnetSdkRootFolder.isDirectory) {
                 return dotnetSdkRootFolder.children
-                        .filter { it.isDirectory }
+                        .filter { it.isDirectory && it.name.substring(0, 1).toIntOrNull() != null }
                         .map { it.name }
                         .toTypedArray()
             }
