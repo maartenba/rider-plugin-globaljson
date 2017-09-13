@@ -24,14 +24,16 @@ intellij {
     // localPath = '/Users/matt/Library/Application Support/JetBrains/Toolbox/apps/Rider/ch-1/171.4089.265/Rider EAP.app/Contents'
     // localPath = "C:\\Users\\Ivan.Shakhov\\AppData\\Local\\JetBrains\\Toolbox\\apps\\Rider\\ch-0\\171.4456.459"
     // localPath = "C:\\Users\\ivan.pashchenko\\AppData\\Local\\JetBrains\\Toolbox\\apps\\Rider\\ch-0\\dev"
-    localPath = "C:\\Users\\maart\\AppData\\Local\\JetBrains\\Toolbox\\apps\\Rider\\ch-0\\171.4456.3029"
+
+    // 2017.2 EAP
+    localPath = "C:\\Users\\maart\\AppData\\Local\\JetBrains\\Toolbox\\apps\\Rider\\ch-0\\172.4144.197"
 
     def dir = file('dependencies')
     if (dir.exists()) {
-      localPath = dir.absolutePath
+        localPath = dir.absolutePath
     }
     else {
-      version = '171.4456.3029' // 2017.2 EAP build 1
+        version = '172.4144.197' // 2017.1 RTM
     }
 
     // Sources aren't available for Rider
@@ -47,11 +49,12 @@ dependencies {
 
     testCompile 'junit:junit:4.12'
     testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+    testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
 }
 
 runIde {
     systemProperties = [
-        'rider.debug.mono.debug': true,
-        'rider.debug.mono.allowConnect': true
+            'rider.debug.mono.debug': true,
+            'rider.debug.mono.allowConnect': true
     ]
 }
