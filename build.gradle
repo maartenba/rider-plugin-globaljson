@@ -26,14 +26,14 @@ intellij {
     // localPath = "C:\\Users\\ivan.pashchenko\\AppData\\Local\\JetBrains\\Toolbox\\apps\\Rider\\ch-0\\dev"
 
     // 2017.2 EAP
-    localPath = "C:\\Users\\maart\\AppData\\Local\\JetBrains\\Toolbox\\apps\\Rider\\ch-0\\172.4144.197"
+    //localPath = "C:\\Users\\maart\\AppData\\Local\\JetBrains\\Toolbox\\apps\\Rider\\ch-0\\172.4144.461"
 
     def dir = file('dependencies')
     if (dir.exists()) {
         localPath = dir.absolutePath
     }
     else {
-        version = '172.4144.197' // 2017.1 RTM
+        version = 'LATEST-TRUNK-SNAPSHOT' // 2017.2 RTM
     }
 
     // Sources aren't available for Rider
