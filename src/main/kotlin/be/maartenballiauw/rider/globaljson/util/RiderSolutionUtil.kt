@@ -5,6 +5,7 @@ import com.intellij.openapi.project.Project
 import com.jetbrains.rider.model.RdProjectDescriptor
 import com.jetbrains.rider.model.ReloadCommand
 import com.jetbrains.rider.model.UnloadCommand
+import com.jetbrains.rider.model.projectModelTasks
 import com.jetbrains.rider.projectView.nodes.*
 import com.jetbrains.rider.projectView.solution
 import com.jetbrains.rider.util.idea.syncFromBackend
