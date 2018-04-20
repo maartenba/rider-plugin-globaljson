@@ -1,15 +1,16 @@
 package be.maartenballiauw.rider.globaljson.actions
 
+import be.maartenballiauw.rider.globaljson.dialogs.ManageDotNetCoreSdkDialog
+import be.maartenballiauw.rider.globaljson.util.DotNetCoreSdkDetector
+import be.maartenballiauw.rider.globaljson.util.RiderSolutionUtil
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.fileEditor.impl.LoadTextUtil
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.ui.DialogWrapper
-import be.maartenballiauw.rider.globaljson.dialogs.ManageDotNetCoreSdkDialog
-import be.maartenballiauw.rider.globaljson.util.DotNetCoreSdkDetector
-import be.maartenballiauw.rider.globaljson.util.RiderSolutionUtil
 import com.jetbrains.rider.projectView.actions.ProjectViewActionBase
-import com.jetbrains.rider.projectView.nodes.*
+import com.jetbrains.rider.projectView.nodes.ProjectModelNode
+import com.jetbrains.rider.projectView.nodes.isSolution
 import org.json.JSONObject
 import java.io.OutputStreamWriter
 
@@ -24,7 +25,7 @@ class ManageDotNetCoreSdkAction : ProjectViewActionBase(
 
     override fun updatePresentation(e: AnActionEvent, items: Array<ProjectModelNode>) {
         val solutionItem = items.firstOrNull()
-        e.presentation.isEnabled = solutionItem != null &&
+        e.presentation.isEnabledAndVisible = solutionItem != null &&
                 RiderSolutionUtil.hasDotNetCoreProjects(solutionItem.getChildren())
     }
 
@@ -47,7 +48,7 @@ class ManageDotNetCoreSdkAction : ProjectViewActionBase(
         }
 
         // Detect available SDK's
-        val detector = DotNetCoreSdkDetector()
+        val detector = DotNetCoreSdkDetector(project)
 
         // Show dialog
         val dialog = ManageDotNetCoreSdkDialog(detector.getInstalledSdkVersions(), currentSdkVersion)

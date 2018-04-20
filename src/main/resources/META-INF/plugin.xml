@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>be.maartenballiauw.rider.globaljson</id>
   <name>.NET Core global.json support</name>
-  <version>0.0.7.0</version>
+  <version>0.0.8.0</version>
   <vendor url="https://blog.maartenballiauw.be">Maarten Balliauw</vendor>
 
   <idea-version since-build="181.3782" until-build="181.3782.*" />
@@ -13,7 +13,8 @@
 
   <actions>
     <action class="be.maartenballiauw.rider.globaljson.actions.ManageDotNetCoreSdkAction" id="GlobalJson.ManageNetCoreSdkForProjectAction">
-      <add-to-group group-id="SolutionExplorerPopupMenu" anchor="after" relative-to-action="AddRiderProject" />
+      <add-to-group group-id="ToolsMenu" anchor="last" />
+      <add-to-group group-id="RunContextPopupGroup" anchor="last" />
     </action>
   </actions>
 
