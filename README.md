@@ -6,9 +6,11 @@ Rider plugin that allows setting the .NET Core SDK version for a solution.
 
 ## Features
 
-* Adds a solution-level context menu for managing the .NET Core SDK to use
+* Adds a solution-level context menu for managing the .NET Core SDK to use (under the `Tools` context menu)
 * Provides a dialog for selecting from installed .NET Core SDK versions
 * Updates the `global.json` file with the correct .NET Core SDK version
+
+Note that this plugin only writes the `global.json` file, the MSBuild path in Rider must still be configured manually.
 
 ## Links
 

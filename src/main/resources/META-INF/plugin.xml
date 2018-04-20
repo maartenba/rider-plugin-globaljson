@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>be.maartenballiauw.rider.globaljson</id>
   <name>.NET Core global.json support</name>
-  <version>0.0.8.0</version>
+  <version>0.0.9.0</version>
   <vendor url="https://blog.maartenballiauw.be">Maarten Balliauw</vendor>
 
   <idea-version since-build="181.3782" until-build="181.3782.*" />
@@ -22,10 +22,11 @@
 <p>Rider plugin that allows setting the .NET Core SDK version for a solution</p>
 <p><strong>Features</strong></p>
 <ul>
-<li>Adds a solution-level context menu for managing the .NET Core SDK to use</li>
+<li>Adds a solution-level context menu for managing the .NET Core SDK to use (under the Tools context menu)</li>
 <li>Provides a dialog for selecting from installed .NET Core SDK versions</li>
 <li>Updates the <code>global.json</code> file with the correct .NET Core SDK version</li>
 </ul>
+<p>Note that this plugin only writes the <code>global.json</code> file, the MSBuild path in Rider must still be configured manually.</p>
 <p><strong>Links</strong></p>
 <ul>
 <li><a href="https://github.com/maartenba/rider-plugin-globaljson">GitHub</a></li>
