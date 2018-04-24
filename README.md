@@ -4,6 +4,8 @@ Rider plugin that allows setting the .NET Core SDK version for a solution.
 
 [&raquo; See end-to-end demo](https://raw.githubusercontent.com/maartenba/rider-plugin-globaljson/master/docs/plugin-demo.gif)
 
+*Note:* This plugin is now part of Rider since version 2018.1.1. Older versions of Rider can still use the plugin.
+
 ## Features
 
 * Adds a solution-level context menu for managing the .NET Core SDK to use (under the `Tools` context menu)
